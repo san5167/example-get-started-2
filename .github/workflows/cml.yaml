@@ -18,4 +18,5 @@ jobs:
           #cat metrics.txt >> report.md
           #echo '![](./plot.png "Confusion Matrix")' >> report.md
           cat .dvcignore >> report.md
+          dvc diff  >> report.md
           cml comment create report.md
